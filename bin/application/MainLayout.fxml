@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="230.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainLayoutController">
+   <children>
+      <Button id="browse" fx:id="browse" layoutX="449.0" layoutY="67.0" mnemonicParsing="false" onAction="#onBrowse" text="Browse..." AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font></Button>
+      <Label layoutX="73.0" layoutY="20.0" prefWidth="640.0" text="           MD5 Hash based Encryption/Decryption Algorithm" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Calibri Light" size="25.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="132.0" text="Key :" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font name="Calibri Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="path" layoutX="93.0" layoutY="78.0" prefHeight="34.0" prefWidth="427.0" promptText="Enter File Path" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="key" layoutX="80.0" layoutY="132.0" prefHeight="37.0" prefWidth="125.0" text="AAAAAAAAAA" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="encrypt" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#onEncrypt" text="Encrypt" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="decrypt" layoutX="333.0" layoutY="178.0" mnemonicParsing="false" onAction="#onDecrypt" text="Decrypt" textAlignment="CENTER" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Calibri Light" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="85.0" text="File :" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font name="Calibri Light" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="112.0" layoutY="50.0" prefHeight="11.0" prefWidth="600.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+      <Label layoutX="217.0" layoutY="138.0" text="* Case Sensitive, only A~Z or a~z are allowed" textFill="#b5b5b5">
+         <font>
+            <Font name="Calibri Light" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
