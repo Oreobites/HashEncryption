@@ -46,7 +46,7 @@
          </font>
       </Label>
       <Separator layoutX="112.0" layoutY="50.0" prefHeight="11.0" prefWidth="600.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
-      <Label layoutX="217.0" layoutY="138.0" text="* Case Sensitive, only A~Z or a~z are allowed" textFill="#b5b5b5">
+      <Label layoutX="217.0" layoutY="138.0" text="* Case Sensitive, only A~Z or a~z is allowed" textFill="#b5b5b5">
          <font>
             <Font name="Calibri Light" size="20.0" />
          </font>
